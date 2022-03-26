@@ -120,6 +120,16 @@ const PC = () => {
             >
               RedCrafter07
             </motion.p>
+            <motion.p
+              animate={{ y: [50, 0], opacity: [0, 1] }}
+              transition={{
+                duration: 0.25,
+                ease: [0.5, 0, 0.5, 1],
+                delay: 3.5,
+              }}
+            >
+              Hi. I'm RedCrafter07, a random developer from Germany.
+            </motion.p>
           </div>
         </motion.div>
       </div>
