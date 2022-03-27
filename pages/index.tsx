@@ -388,6 +388,21 @@ const Site = () => {
                 My Github
               </motion.a>
             </p>
+            <p>
+              <motion.a
+                animate={{ y: [50, 0], opacity: [0, 1] }}
+                transition={{
+                  duration: 0.3,
+                  ease: [0.5, 0, 0.5, 1],
+                  delay: 4.1,
+                }}
+                href="https://github.com/RedCrafter07/card"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Site source code
+              </motion.a>
+            </p>
           </div>
         </motion.div>
       </div>
