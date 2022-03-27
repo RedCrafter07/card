@@ -68,7 +68,7 @@ const Site = () => {
       </motion.div>
       <div className="background max-w-screen grid h-screen max-h-screen w-screen place-items-center bg-neutral-800 px-2 text-white">
         <motion.div
-          className="grid grid-cols-12 rounded-lg shadow-xl"
+          className="grid grid-cols-12 rounded-lg p-6 shadow-xl"
           animate={{
             backgroundColor: ['#000000', '#404040'],
             width: ['100%', '100%', '100%', '75%'],
@@ -82,7 +82,7 @@ const Site = () => {
         >
           <motion.div
             id="sidebar"
-            className="lg:grid-span-1 hidden w-14 place-items-center border-r border-white border-opacity-25 px-2 lg:grid"
+            className="lg:grid-span-1 hidden w-16 place-items-center border-r border-white border-opacity-25 px-2 lg:grid"
             animate={{
               x: [-54, -27, -27, 0],
               height: ['0%', '25%', '100%', '100%'],
@@ -203,7 +203,7 @@ const Site = () => {
                   delay: 3.65,
                 }}
                 animate={{
-                  width: ['0%', '75%'],
+                  width: ['0%', '66%'],
                   padding: ['0 0', '0 0.5rem'],
                 }}
               >
@@ -227,7 +227,7 @@ const Site = () => {
                   delay: 3.7,
                 }}
                 animate={{
-                  width: ['0%', '66%'],
+                  width: ['0%', '75%'],
                   padding: ['0 0', '0 0.5rem'],
                 }}
               >
