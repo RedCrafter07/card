@@ -183,7 +183,7 @@ const Site = () => {
                   padding: ['0 0', '0 0.5rem'],
                 }}
               >
-                HTML
+                HTML (100%)
               </motion.div>
             </motion.div>
             <motion.div
@@ -207,7 +207,7 @@ const Site = () => {
                   padding: ['0 0', '0 0.5rem'],
                 }}
               >
-                CSS
+                CSS (~66%)
               </motion.div>
             </motion.div>
             <motion.div
@@ -231,7 +231,7 @@ const Site = () => {
                   padding: ['0 0', '0 0.5rem'],
                 }}
               >
-                JS/TS
+                JS/TS (~75%)
               </motion.div>
             </motion.div>
             <motion.div
@@ -255,7 +255,7 @@ const Site = () => {
                   padding: ['0 0', '0 0.5rem'],
                 }}
               >
-                Java
+                Java (~5%)
               </motion.div>
             </motion.div>
             <motion.p
