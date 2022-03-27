@@ -153,7 +153,7 @@ const Site = () => {
             </motion.p>
             <motion.p
               animate={{ y: [50, 0], opacity: [0, 1] }}
-              className="font-redi text-xl font-black uppercase"
+              className="font-redi my-6 text-xl font-black uppercase"
               transition={{
                 duration: 0.3,
                 ease: [0.5, 0, 0.5, 1],
@@ -163,7 +163,7 @@ const Site = () => {
               Skills
             </motion.p>
             <motion.div
-              className="my-4 my-6 h-6 w-full rounded-md bg-neutral-800"
+              className="my-4 h-6 w-full rounded-md bg-neutral-800"
               animate={{ y: [50, 0], opacity: [0, 1] }}
               transition={{
                 duration: 0.3,
@@ -413,6 +413,7 @@ const Site = () => {
 const Home: NextPage = () => {
   return (
     <div>
+      <title>RedCrafter07</title>
       <Site></Site>
     </div>
   );
