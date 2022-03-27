@@ -11,3 +11,7 @@
 .font-redi {
 	font-family: Montserrat;
 }
+
+a {
+	@apply underline hover:text-blue-400 transition-colors duration-150;
+}
