@@ -1,0 +1,4 @@
+Contact: mailto:contact@redcrafter07.de
+Expires: 2022-12-31T23:59:00.000Z
+Preferred-Languages: en, de
+Canonical: https://a.r07.dev/.well-known/security.txt
