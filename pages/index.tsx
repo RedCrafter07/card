@@ -408,7 +408,7 @@ const Site = () => {
   );
 };
 
-const Home: NextPage = () => {
+const Home = () => {
   return (
     <div>
       <title>RedCrafter07</title>
