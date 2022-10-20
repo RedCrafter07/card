@@ -149,7 +149,7 @@ const Site = () => {
                 delay: 3.3,
               }}
             >
-              Hi. I'm RedCrafter07, a random developer from Germany.
+              Hi. I&apos;m RedCrafter07, a developer from Germany.
             </motion.p>
             <motion.p
               animate={{ y: [50, 0], opacity: [0, 1] }}
