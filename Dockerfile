@@ -11,8 +11,8 @@ RUN pnpm install
 
 COPY . .
 
-RUN yarn build
+RUN pnpm build
 
 EXPOSE 3000
 
-CMD [ "yarn", "start" ]
+CMD [ "pnpm", "start" ]
