@@ -2,10 +2,12 @@ FROM node:17.7.2
 
 WORKDIR /app
 
-COPY package*.json ./
-COPY yarn.lock ./
+RUN npm i -g pnpm
 
-RUN yarn install
+COPY package*.json ./
+COPY pnpm-locl.yaml ./
+
+RUN pnpm install
 
 COPY . .
 
