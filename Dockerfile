@@ -11,8 +11,6 @@ RUN pnpm install
 
 COPY . .
 
-RUN pnpx next telemetry disable
-
 RUN pnpm build
 
 EXPOSE 3000
