@@ -5,7 +5,7 @@ WORKDIR /app
 RUN npm i -g pnpm
 
 COPY package*.json ./
-COPY pnpm-locl.yaml ./
+COPY pnpm-lock.yaml ./
 
 RUN pnpm install
 
