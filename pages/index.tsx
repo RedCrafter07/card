@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 import { Icon } from '@iconify/react';
-import { motion, MotionProps } from 'framer-motion';
+import { motion, MotionProps, TargetAndTransition } from 'framer-motion';
 
 const socials = [
   {
@@ -25,15 +25,40 @@ const socials = [
   },
 ];
 
-const item: MotionProps = {
-  initial: {
-    opacity: 0,
-    y: -50,
-  },
-  animate: {
+const textContainer: Record<string, TargetAndTransition> = {
+  hidden: { opacity: 0 },
+  show: {
     opacity: 1,
-    y: 0,
+    transition: {
+      staggerChildren: 0.05,
+      delayChildren: 3.25,
+    },
   },
+};
+
+const textItem: Record<string, TargetAndTransition> = {
+  hidden: {
+    y: 50,
+    opacity: 0,
+  },
+  show: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.3,
+      ease: [0.5, 0, 0.5, 1],
+    },
+  },
+};
+
+const textContainerProps = {
+  variants: textContainer,
+  initial: 'hidden',
+  animate: 'show',
+};
+
+const textItemProps = {
+  variants: textItem,
 };
 
 const Site = () => {
@@ -124,50 +149,29 @@ const Site = () => {
               })}
             </motion.div>
           </motion.div>
-          <div
+          <motion.div
             id="main"
             className="container col-span-12 mx-auto p-2 lg:col-span-10"
+            {...textContainerProps}
           >
             <motion.p
-              animate={{ y: [50, 0], opacity: [0, 1] }}
-              transition={{
-                duration: 0.3,
-                ease: [0.5, 0, 0.5, 1],
-                delay: 3.25,
-              }}
+              {...textItemProps}
               className="font-redi text-3xl font-black uppercase"
             >
               RedCrafter07
             </motion.p>
-            <motion.p
-              animate={{ y: [50, 0], opacity: [0, 1] }}
-              transition={{
-                duration: 0.3,
-                ease: [0.5, 0, 0.5, 1],
-                delay: 3.3,
-              }}
-            >
+            <motion.p {...textItemProps}>
               Hi. I&apos;m RedCrafter07, a developer from Germany.
             </motion.p>
             <motion.p
-              animate={{ y: [50, 0], opacity: [0, 1] }}
+              {...textItemProps}
               className="font-redi my-6 text-xl font-black uppercase"
-              transition={{
-                duration: 0.3,
-                ease: [0.5, 0, 0.5, 1],
-                delay: 3.35,
-              }}
             >
               Skills
             </motion.p>
             <motion.div
               className="my-4 h-6 w-full rounded-md bg-neutral-800"
-              animate={{ y: [50, 0], opacity: [0, 1] }}
-              transition={{
-                duration: 0.3,
-                ease: [0.5, 0, 0.5, 1],
-                delay: 3.4,
-              }}
+              {...textItemProps}
             >
               <motion.div
                 className="h-full w-full rounded-md bg-orange-500 px-2 text-center"
@@ -258,22 +262,13 @@ const Site = () => {
             </motion.div>
             <motion.p
               className="font-redi my-6 text-xl font-black uppercase"
-              animate={{ y: [50, 0], opacity: [0, 1] }}
-              transition={{
-                duration: 0.3,
-                ease: [0.5, 0, 0.5, 1],
-                delay: 3.75,
-              }}
+              {...textItemProps}
             >
               Coding Gear
             </motion.p>
             <motion.p
               animate={{ y: [50, 0], opacity: [0, 1] }}
-              transition={{
-                duration: 0.3,
-                ease: [0.5, 0, 0.5, 1],
-                delay: 3.8,
-              }}
+              {...textItemProps}
             >
               Coding Program:{' '}
               <a
@@ -284,14 +279,7 @@ const Site = () => {
                 Visual Studio Code
               </a>
             </motion.p>
-            <motion.p
-              animate={{ y: [50, 0], opacity: [0, 1] }}
-              transition={{
-                duration: 0.3,
-                ease: [0.5, 0, 0.5, 1],
-                delay: 3.85,
-              }}
-            >
+            <motion.p {...textItemProps}>
               VS Code Theme:{' '}
               <a
                 href="https://marketplace.visualstudio.com/items?itemName=RedCrafter07.red-theme"
@@ -301,14 +289,7 @@ const Site = () => {
                 RedCrafter07 Theme
               </a>
             </motion.p>
-            <motion.p
-              animate={{ y: [50, 0], opacity: [0, 1] }}
-              transition={{
-                duration: 0.3,
-                ease: [0.5, 0, 0.5, 1],
-                delay: 3.9,
-              }}
-            >
+            <motion.p {...textItemProps}>
               Favorite Framework:{' '}
               <a
                 href="https://reactjs.org"
@@ -326,14 +307,7 @@ const Site = () => {
                 NextJS
               </a>
             </motion.p>
-            <motion.p
-              animate={{ y: [50, 0], opacity: [0, 1] }}
-              transition={{
-                duration: 0.3,
-                ease: [0.5, 0, 0.5, 1],
-                delay: 3.9,
-              }}
-            >
+            <motion.p {...textItemProps}>
               Favorite Programming Language:{' '}
               <a
                 href="https://typescriptlang.org"
@@ -346,24 +320,14 @@ const Site = () => {
 
             <motion.p
               className="font-redi my-6 text-xl font-black uppercase"
-              animate={{ y: [50, 0], opacity: [0, 1] }}
-              transition={{
-                duration: 0.3,
-                ease: [0.5, 0, 0.5, 1],
-                delay: 3.95,
-              }}
+              {...textItemProps}
             >
               Worth to check out
             </motion.p>
 
             <p>
               <motion.a
-                animate={{ y: [50, 0], opacity: [0, 1] }}
-                transition={{
-                  duration: 0.3,
-                  ease: [0.5, 0, 0.5, 1],
-                  delay: 4.0,
-                }}
+                {...textItemProps}
                 href="https://redcrafter07.de"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -373,12 +337,7 @@ const Site = () => {
             </p>
             <p>
               <motion.a
-                animate={{ y: [50, 0], opacity: [0, 1] }}
-                transition={{
-                  duration: 0.3,
-                  ease: [0.5, 0, 0.5, 1],
-                  delay: 4.05,
-                }}
+                {...textItemProps}
                 href="https://github.com/RedCrafter07"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -388,12 +347,7 @@ const Site = () => {
             </p>
             <p>
               <motion.a
-                animate={{ y: [50, 0], opacity: [0, 1] }}
-                transition={{
-                  duration: 0.3,
-                  ease: [0.5, 0, 0.5, 1],
-                  delay: 4.1,
-                }}
+                {...textItemProps}
                 href="https://github.com/RedCrafter07/card"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -401,7 +355,7 @@ const Site = () => {
                 Site source code
               </motion.a>
             </p>
-          </div>
+          </motion.div>
         </motion.div>
       </div>
     </div>
