@@ -7,24 +7,24 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@fontsource/montserrat": "^4.5.13",
-    "@fontsource/readex-pro": "^4.5.11",
-    "framer-motion": "6.2.8",
-    "next": "^12.3.1",
+    "@fontsource/montserrat": "^5.0.8",
+    "@fontsource/readex-pro": "^5.0.8",
+    "framer-motion": "10.16.0",
+    "next": "^13.4.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@iconify/react": "^4.0.0",
-    "@types/node": "18.11.2",
-    "@types/react": "18.0.21",
-    "autoprefixer": "^10.4.12",
-    "eslint": "8.25.0",
-    "eslint-config-next": "12.3.1",
-    "postcss": "^8.4.18",
-    "prettier": "^2.7.1",
-    "prettier-plugin-tailwindcss": "^0.1.13",
-    "tailwindcss": "^3.2.0",
-    "typescript": "4.8.4"
+    "@iconify/react": "^4.1.1",
+    "@types/node": "20.5.0",
+    "@types/react": "18.2.20",
+    "autoprefixer": "^10.4.15",
+    "eslint": "8.47.0",
+    "eslint-config-next": "13.4.16",
+    "postcss": "^8.4.28",
+    "prettier": "^3.0.2",
+    "prettier-plugin-tailwindcss": "^0.5.3",
+    "tailwindcss": "^3.3.3",
+    "typescript": "5.1.6"
   }
 }
