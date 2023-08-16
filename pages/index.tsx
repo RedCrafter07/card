@@ -9,17 +9,17 @@ const socials = [
     icon: 'fa6-brands:discord',
   },
   {
-    href: 'https://r07.dev/l/youtube',
+    href: 'https://yt.r07.dev',
     color: '#ff0000',
     icon: 'fa6-brands:youtube',
   },
   {
-    href: 'https://r07.dev/l/twitch',
+    href: 'https://twitch.r07.dev',
     color: '#9146FF',
     icon: 'fa6-brands:twitch',
   },
   {
-    href: 'https://r07.dev/l/github',
+    href: 'https://gh.r07.dev',
     color: '#9146FF',
     icon: 'fa6-brands:github',
   },
