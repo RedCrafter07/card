@@ -1,6 +1,5 @@
-import { NextPage } from 'next';
 import { Icon } from '@iconify/react';
-import { motion, MotionProps, TargetAndTransition } from 'framer-motion';
+import { motion, TargetAndTransition } from 'framer-motion';
 
 const socials = [
   {
@@ -105,7 +104,7 @@ const Site = () => {
         >
           <motion.div
             id="sidebar"
-            className="lg:grid-span-1 hidden w-16 place-items-center border-r border-white border-opacity-25 px-2 lg:grid"
+            className="lg:grid-span-1 hidden w-16 place-items-center border-r border-white/25 px-2 lg:grid"
             animate={{
               x: [-54, -27, -27, 0],
               height: ['0%', '25%', '100%', '100%'],
