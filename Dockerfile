@@ -1,18 +1,17 @@
-FROM node:23.7.0
-
+FROM oven/bun:1 AS base
 WORKDIR /app
 
 RUN npm i -g pnpm
 
 COPY package*.json ./
-COPY pnpm-lock.yaml ./
+COPY bun.lock ./
 
-RUN pnpm install
+RUN bun install
 
 COPY . .
 
-RUN pnpm build
+RUN bun run build
 
 EXPOSE 3000
 
-CMD [ "yarn", "start" ]
+CMD [ "bun", "run", "start" ]
