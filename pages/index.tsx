@@ -99,20 +99,14 @@ const Site = () => {
             <p>
               Favorite Framework:{' '}
               <a
-                href="https://reactjs.org"
+                href="https://svelte.dev"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                React
+                Svelte
               </a>
               {' with '}
-              <a
-                href="https://nextjs.org"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                NextJS
-              </a>
+              SvelteKit
             </p>
             <p>
               Favorite Programming Language:{' '}
