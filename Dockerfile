@@ -19,4 +19,4 @@ ENV HOSTNAME=0.0.0.0
 
 EXPOSE 3000
 
-CMD [ "bun", "server.js" ]
+ENTRYPOINT [ "/usr/local/bin/bun", "server.js" ]
